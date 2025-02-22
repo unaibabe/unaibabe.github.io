@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png" type="icon">
+    <title>Breaking Bad - Formulario</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body class="formulario">
+    <h1>Breaking Bad – Que comience el juego!</h1>
+    <form class="datosFormulario"  action="mailto:raul.rodriguez@proeducaglobal.com" method="post" enctype="text/plain">
+        <fieldset class="datosPersonales">
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required><br>
+            <label for="direccion">Dirección Postal:</label>
+            <input type="text" id="direccion" name="direccion"><br>
+            <label for="calle">Calle:</label>
+            <input type="text" id="calle" name="calle"><br>
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero"><br>
+            <label for="piso">Piso:</label>
+            <input type="text" id="piso" name="piso"><br>
+            <label for="cp">Código Postal:</label>
+            <input type="text" id="cp" name="cp"><br>
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad"><br>
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni"><br>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+        </fieldset>
+        <fieldset class="masInformacion">
+            <legend>Más Información</legend>
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="hombre" name="sexo" value="hombre">
+            <label for="hombre">Hombre</label>
+            <input type="radio" id="mujer" name="sexo" value="mujer">
+            <label for="mujer">Mujer</label><br>
+            <label for="nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="nacimiento" name="nacimiento"><br>
+            <label for="personaje">Personaje Favorito:</label>
+            <select id="personaje" name="personaje">
+                <option value="jessie">Jessie Pinkman</option>
+                <option value="walter">Walter White</option>
+                <option value="saul">Saul Goodman</option>
+                <option value="gus">Gustavo Fring</option>
+                <option value="pollos">Pollos Hermanos</option>
+                <option value="otros">Otros personajes</option>
+            </select><br>
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios"></textarea><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+            <input type="file" name="file">
+        </fieldset>
+    </form>
+</body>
+</html>

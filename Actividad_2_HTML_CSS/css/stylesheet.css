@@ -1,0 +1,443 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('../fonts/Breaking_Bad.ttf') format('truetype');
+  }
+    /**
+        ******************************
+        ********* INDEX **************
+        ******************************
+        */
+        .indexBody {
+            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: myFirstFont;
+            background-image: url('../img/fondo.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*background-color: rgb(71, 62, 62);*/
+        }
+
+        
+        .image-top {
+            width: 200px;
+            height: 200px;
+            background-image: url('../img/logo.PNG');
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto 10px;
+            margin-top: 10px;
+            padding-top: 10px;
+            
+        }
+
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;  
+            padding: 20px;
+        }
+
+        
+        .poster {
+            margin-top: 20px;
+            width: 700px;
+            height: 300px;
+            object-fit: cover;
+            border: 10px outset brown; 
+            border-radius: 22px; 
+            /*object-fit: contain;*/
+        }
+
+        /* Texto centrado */
+        .centered-text {
+            text-align: center;
+            color: azure;
+            font-size: 40px;
+            /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+        }
+
+        /**
+        ******************************
+        ********* FORMULARIO *********
+        ******************************
+        */
+
+        .formulario{
+            text-align: center;
+            background-image: url('../img/fondo.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .datosFormulario{
+            padding-top: 30px;
+            margin: auto;
+            background-color: #ddd6e6cc;
+            width: 500px;
+            height: 500px;
+            
+        }
+        .datosPersonales{
+            margin: auto;
+            padding-bottom: 30px;
+        }
+        .masInformacion{
+            margin: auto;
+            padding-top: 30px;
+        }
+
+          /**
+        ******************************
+        ********* TABLA **************
+        ******************************
+        */
+        :root {
+            --tipo_1: #b9dc20;
+            --tipo_2: #d7ea83;
+            --tipo_3: #eff6c9;
+            --tipo_4: #87a31b;
+            --tipo_5: #627025;
+            --tipo_6: #c7e14b;
+            --tipo_7: #bcc49b;
+            --tipo_8: #828f4a;
+            --tipo_9: #ab8ed0;
+            padding: 0;
+
+
+          }
+
+        .tablaBody{
+            background-color: #0c3e11;
+            text-align: center;
+            
+        }
+        .cabecera{
+            margin: auto;
+            background-image: url('../img/cabecera.png');
+            background-position: center;
+            width: 450px;
+            height: 220px;
+            margin-bottom: 30px;
+        
+        }
+        .tabla{
+            /*border: 10px solid black;*/
+            width: 1080px;
+            height: 720px;
+            padding: 8px;
+            text-align: center;
+            border-collapse: collapse;
+            margin: auto;
+            margin-bottom: 30px;
+            background-color: #2b2c24;
+            border-spacing: 0px;
+            
+        }
+        
+        .tabla_abajo{
+            /*border: 10px solid black;*/
+            width: auto;
+            height: auto;
+            padding: 10px;
+            text-align: center;
+            border-collapse: collapse;
+            margin: auto;
+            margin-bottom: 30px;
+            width: 1000px;
+            height: 200px;
+            background-color: #2b2c24;
+        }
+
+        tr, td{
+            padding: 0;
+            margin: 0;
+            border: 5px solid  #2b2c24;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            border-collapse: collapse;
+            margin: auto;
+            vertical-align: middle;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: #313a1d;
+            max-width: 100%;
+            max-height: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            table-layout: fixed;
+
+            
+        }
+ 
+
+        .tipo_1{
+            background-color: var(--tipo_1);
+        }
+        .tipo_2{
+            background-color: var(--tipo_2);
+        }
+        .tipo_3{
+            background-color: var(--tipo_3);
+        }
+        .tipo_4{
+            background-color: var(--tipo_4);
+        }
+        .tipo_5{
+            background-color: var(--tipo_5);
+        }
+        .tipo_6{
+            background-color: var(--tipo_6);
+        }
+        .tipo_7{
+            background-color: var(--tipo_7);
+        }
+        .tipo_8{
+            background-color: var(--tipo_8);
+        }
+        .tipo_9{
+            background-color: var(--tipo_9);
+        }
+        .tipo_10{
+            background-color: #c7c428;
+        }
+
+        .letra_grande{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            display: block;
+        }
+        .letra_peque{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 10px;
+            display: block;
+            
+        }
+
+
+
+        #cell-1-1{
+            background-image: url(../img/Tabla_Periodica/walterwhite.png);
+            margin: auto;
+            background-repeat: no-repeat;
+            background-position: 50% 10%;
+            padding-top: 60px;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover; 
+
+                 
+        }
+        #cell-2-2{
+            background-image:url(../img/Tabla_Periodica/hankschrader.png);
+            background-repeat: no-repeat;
+            background-size: 100% 90%;
+            background-position: bottom;
+            
+
+        }
+        #cell-3-2{
+            background-image:url(../img/Tabla_Periodica/skylerwhite.png);
+            background-repeat: no-repeat;
+            background-size: 90%;
+            background-position: 50% 80%;   
+            text-align: center;
+            vertical-align: top;
+            padding-top: 10px; 
+            
+        }
+        #cell-4-1{
+            background-image:url(../img/Tabla_Periodica/marieschrader.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: bottom;   
+            text-align: center;
+            vertical-align: top;
+            padding-top: 20px;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover; 
+        }
+        #cell-3-4{
+            background-image:url(../img/Tabla_Periodica/saulgoodman.png);
+            background-repeat: no-repeat;
+            background-size: 70%;
+            background-position: 50% 95%;   
+            text-align: center;
+            vertical-align: top;
+            padding-top: 12px;
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: cover;
+        }
+        #cell-3-5{
+            background-image:url(../img/Tabla_Periodica/jessiepinkman.png);
+            background-repeat: no-repeat;
+            background-size: 90%;
+            background-position: bottom;   
+            text-align: center;
+            vertical-align: top;
+            padding-top: 5px;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            
+        }
+        #cell-4-3{
+            background-image:url(../img/Tabla_Periodica/badger.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: bottom;   
+            text-align: center;
+            vertical-align: top;
+            padding-top: 20px;
+        }
+        #cell-2-7{
+            background-image:url(../img/Tabla_Periodica/hectorsalamanca.png);
+            background-repeat: no-repeat;
+            background-size: 60%;
+            background-position: 50% 90%;   
+            text-align: center;
+            vertical-align: top;
+            padding-top: 10px;
+        }
+        #cell-2-8{
+            background-image:url(../img/Tabla_Periodica/tucosalamanca.png);
+            background-repeat: no-repeat;
+            background-size: 60%;
+            background-position: 50% 90%;   
+            text-align: center;
+            vertical-align: top;
+            padding-top: 10px;
+            white-space: pre-line;
+        }
+        #cell-2-9{
+            background-image:url(../img/Tabla_Periodica/gustavofrink.png);
+            background-repeat: no-repeat;
+            background-size: 55%;
+            background-position: 50% 90%;   
+            text-align: center;
+            vertical-align: top;
+            padding-top: 10px;
+        }
+        #cell-4-6{
+            background-image:url(../img/Tabla_Periodica/mike.png);
+            background-repeat: no-repeat;
+            background-size: 90%;
+            background-position: bottom;   
+            text-align: center;
+            vertical-align: top;
+            padding-top: 10px;
+        }
+        #cell-3-7{
+            background-image:url(../img/Tabla_Periodica/gale.png);
+            background-repeat: no-repeat;
+            background-size: 70%;
+            background-position: 50% 80%;  
+            margin-bottom: 20px; 
+            text-align: center;
+            vertical-align: top;
+            padding-bottom: 10px;
+        }
+        #cell-10-1{
+            background-image:url(../img/Tabla_Periodica/cristal.png);
+            background-repeat: no-repeat;
+            background-position: center;   
+            text-align: center;
+            vertical-align: top;
+            
+        }
+        #cell-9-2{
+            background-image:url(../img/Tabla_Periodica/bus.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;   
+            text-align: center;
+            vertical-align: top;
+            
+        }
+        #cell-10-3{
+            background-image:url(../img/Tabla_Periodica/pizza.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;   
+            text-align: center;
+            vertical-align: top;
+            
+        }
+        #cell-9-4{
+            background-image:url(../img/Tabla_Periodica/pistola.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;   
+            text-align: center;
+            vertical-align: top;
+            
+        }
+        #cell-10-5{
+            background-image:url(../img/Tabla_Periodica/calzoncillos.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;   
+            text-align: center;
+            vertical-align: top;
+            
+        }
+        #cell-9-6{
+            background-image:url(../img/Tabla_Periodica/pocima.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;   
+            text-align: center;
+            vertical-align: top;
+            
+        }
+        #cell-10-7{
+            background-image:url(../img/Tabla_Periodica/mascara.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;   
+            text-align: center;
+            vertical-align: top;
+            
+        }
+        #cell-9-8{
+            background-image:url(../img/Tabla_Periodica/movil.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;   
+            text-align: center;
+            vertical-align: top;
+            
+        }
+        #cell-10-9{
+            background-image:url(../img/Tabla_Periodica/plato.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;   
+            text-align: center;
+            vertical-align: top;
+            
+        }
+        #cell-9-10{
+            background-image:url(../img/Tabla_Periodica/mosca.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;   
+            text-align: center;
+            vertical-align: top;
+            
+        }
+
+
+                
