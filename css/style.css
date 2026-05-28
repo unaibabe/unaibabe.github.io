@@ -749,6 +749,25 @@ header.scrolled {
   z-index: 1;
 }
 
+.project-img {
+  max-width: 85%;
+  max-height: 80%;
+  object-fit: contain;
+  z-index: 1;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: var(--transition-smooth);
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.06);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+}
+
+.project-card:hover .project-img-svg {
+  transform: scale(1.08);
+}
+
 .project-content {
   padding: 2.5rem;
   display: flex;
