@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Tags -->
+  <title>Unai Ibabe | Junior Python & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Unai Ibabe, Junior Python and Full-Stack Developer. Former Technical Crowd Artist at El Ranchito with 5+ years of experience optimizing high-pressure VFX simulation pipelines. Specialized in Python, React, JavaScript, and Automation.">
+  <meta name="keywords" content="Unai Ibabe, Python Developer, Full-Stack Developer, React, JavaScript, FastAPI, SQL Database, VFX Pipeline Scripting, El Ranchito, Software Engineer, DAM UNIR">
+  <meta name="author" content="Unai Ibabe">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Unai Ibabe | Junior Python & Full-Stack Developer">
+  <meta property="og:description" content="Discover the technical portfolio of Unai Ibabe, merging dynamic Python & React software development with AAA cinematic automation and computer vision.">
+  <meta property="og:url" content="https://github.com/unaibabe">
+  
+  <!-- Google Fonts & FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Schema.org JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Unai Ibabe",
+      "jobTitle": "Junior Python & Full-Stack Developer",
+      "url": "https://github.com/unaibabe",
+      "sameAs": [
+        "https://www.linkedin.com/in/unai-ibabe/",
+        "http://github.com/unaibabe"
+      ],
+      "knowsAbout": ["Python", "JavaScript", "React", "HTML5/CSS3", "FastAPI", "OpenCV", "VFX Crowd Simulations", "SQL Databases"]
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Background Flocking Boids Crowd Simulation Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Floating Navigation Bar -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        UNAI.IBABE<span>()</span>
+      </a>
+      
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <a href="#about" class="nav-link">
+              <span class="lang-en">About</span>
+              <span class="lang-es">Sobre Mí</span>
+            </a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-link">
+              <span class="lang-en">Skills</span>
+              <span class="lang-es">Habilidades</span>
+            </a>
+          </li>
+          <li>
+            <a href="#vfx" class="nav-link">
+              <span class="lang-en">VFX Pipeline</span>
+              <span class="lang-es">Producción VFX</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link">
+              <span class="lang-en">Projects</span>
+              <span class="lang-es">Proyectos</span>
+            </a>
+          </li>
+          <li>
+            <a href="#education" class="nav-link">
+              <span class="lang-en">Education</span>
+              <span class="lang-es">Educación</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link btn btn-secondary" style="padding: 0.5rem 1.2rem;">
+              <span class="lang-en">Contact</span>
+              <span class="lang-es">Contacto</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-controls">
+        <button class="lang-toggle" id="lang-btn" aria-label="Toggle language">ES</button>
+        <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <div class="hero-subtitle">
+          <span class="lang-en">Junior Python & Full-Stack Developer</span>
+          <span class="lang-es">Junior Python & Full-Stack Developer</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="lang-en">Optimizing Logic,</span>
+          <span class="lang-es">Optimizando Lógica,</span>
+          <br>
+          <span class="lang-en">Automating Data.</span>
+          <span class="lang-es">Automatizando Datos.</span>
+        </h1>
+        
+        <p class="hero-desc">
+          <span class="lang-en">
+            I build highly optimized web applications, beautiful React frontends, and automated workflow scripts. Drawing from 5+ years of scaling logical pipelines in AAA films (El Ranchito), I bring clean coding principles, database foundations (SQL), and advanced Python scripting to modern web development.
+          </span>
+          <span class="lang-es">
+            Desarrollo aplicaciones web altamente optimizadas, interfaces atractivas en React y scripts de automatización. Con más de 5 años escalando pipelines lógicos en películas AAA (El Ranchito), aporto principios de código limpio, bases de datos (SQL) y scripting avanzado en Python al desarrollo de software moderno.
+          </span>
+        </p>
+        
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <span class="lang-en">View Projects</span>
+            <span class="lang-es">Ver Proyectos</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="https://docs.google.com/document/d/1XQkQnwRcy6RVpe0t4Pqefx6yK4L5_OoKu8qyg6fxmX4/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary">
+            <span class="lang-en">Review Resume (CV)</span>
+            <span class="lang-es">Revisar Currículum (CV)</span>
+            <i class="fas fa-file-download"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Interactive Python Shell Terminal Component -->
+      <div class="terminal-window" id="terminal">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <div class="terminal-dot dot-red"></div>
+            <div class="terminal-dot dot-yellow"></div>
+            <div class="terminal-dot dot-green"></div>
+          </div>
+          <div class="terminal-title">interactive_profile.py</div>
+          <div></div>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <div class="terminal-line">
+            <span class="lang-en"># Welcome! Type 'help' to see all available commands.</span>
+            <span class="lang-es"># ¡Bienvenido! Escribe 'help' para ver los comandos.</span>
+          </div>
+          <div class="terminal-line">>>> import unai_ibabe</div>
+          <div class="terminal-line">>>> unai_ibabe.status()</div>
+          <div class="terminal-line terminal-output-success">
+            <span class="lang-en">"Actively seeking Python, React or Full-Stack Web Development roles."</span>
+            <span class="lang-es">"Buscando activamente roles de Python, React o Desarrollo Web Full-Stack."</span>
+          </div>
+          
+          <div class="terminal-input-row" id="terminal-input-row">
+            <span class="terminal-prompt">>>></span>
+            <input type="text" class="terminal-input-field" id="terminal-input" placeholder="" autofocus autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="profile-card">
+            <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: #fff;">Unai Ibabe</h3>
+            <p style="color: var(--accent-cyan); font-family: var(--font-mono); margin-bottom: 1.5rem;">ibabe92@gmail.com</p>
+            <p class="lang-en" style="margin-bottom: 1.5rem;">
+              My professional core is logical optimization. I transitioned from executing crowd simulations in complex high-pressure environments to architecting Python scripts and tools that cut production overhead. Now, I apply that same level of rigor, database knowledge (SQL), and clean OOP architecture (Java/Python) to full-stack web applications using React and Python.
+            </p>
+            <p class="lang-es" style="margin-bottom: 1.5rem;">
+              Mi núcleo profesional es la optimización lógica. Pasé de ejecutar simulaciones de multitudes en entornos complejos de alta presión a diseñar scripts y herramientas en Python que redujeron sustancialmente los tiempos de procesamiento. Ahora, aplico ese mismo nivel de rigor, conocimientos de bases de datos (SQL) y arquitectura limpia a aplicaciones web full-stack con React y Python.
+            </p>
+            
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">
+                  <span class="lang-en">Years in AAA VFX</span>
+                  <span class="lang-es">Años en VFX AAA</span>
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">10/10</div>
+                <div class="stat-label">
+                  <span class="lang-en">VFX & Pipe Honors</span>
+                  <span class="lang-es">Matrícula de Honor</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-right">
+          <h2>
+            <span class="lang-en">Crafting Web & Python Systems</span>
+            <span class="lang-es">Desarrollo Web & Automatización Python</span>
+          </h2>
+          <p class="about-bio lang-en">
+            I hold a Multi-platform Application Development (DAM) degree coupled with advanced studies in VFX Pipeline Scripting and Web Application Development. Having spent half a decade resolving critical logical blockages for global production giants, I bring an elite level of problem-solving.
+          </p>
+          <p class="about-bio lang-es">
+            Cuento con una titulación en Desarrollo de Aplicaciones Multiplataforma (DAM) junto con estudios avanzados en Scripting de Pipelines VFX y Desarrollo de Aplicaciones Web. Tras media década resolviendo bloqueos lógicos críticos para gigantes globales de la producción cinematográfica, aporto un nivel élite de resolución de problemas.
+          </p>
+          <p class="about-bio lang-en">
+            I am highly proficient in Python scripting, API design with FastAPI, and frontend development with HTML5, CSS3, JavaScript, and React. I also leverage relational database schema architecture (SQL) as a strong foundational knowledge, creating software that values speed, modularity, and clean code.
+          </p>
+          <p class="about-bio lang-es">
+            Domino el scripting con Python, el diseño de APIs con FastAPI y el desarrollo front-end con HTML5, CSS3, JavaScript y React. También integro el diseño de bases de datos relacionales (SQL) como una sólida base de conocimiento, creando software que prioriza la velocidad, la modularidad y el código limpio.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Stack Section -->
+  <section id="skills" style="background: rgba(11, 15, 25, 0.4);">
+    <div class="container">
+      <h2 style="margin-bottom: 4rem;">
+        <span class="lang-en">Technical Expertise</span>
+        <span class="lang-es">Especialización Técnica</span>
+      </h2>
+      
+      <div class="skills-container">
+        <!-- Languages -->
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> 
+            <span class="lang-en">Languages</span>
+            <span class="lang-es">Lenguajes</span>
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML5 / CSS3</span>
+            <span class="skill-tag">Java (OOP)</span>
+            <span class="skill-tag">SQL (Knowledge)</span>
+          </div>
+        </div>
+        
+        <!-- Data & Backend -->
+        <div class="skill-category">
+          <h3><i class="fas fa-database"></i>
+            <span class="lang-en">Web & Database Foundations</span>
+            <span class="lang-es">Fundamentos Web & Datos</span>
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Relational DB Architecture</span>
+            <span class="skill-tag">Data Pipelines</span>
+          </div>
+        </div>
+        
+        <!-- Tools -->
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i>
+            <span class="lang-en">Tools & Frameworks</span>
+            <span class="lang-es">Herramientas & Frameworks</span>
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">OpenCV (Computer Vision)</span>
+            <span class="skill-tag">PySide / PyQt</span>
+            <span class="skill-tag">React (Frontend)</span>
+            <span class="skill-tag">Clean Code Methodology</span>
+          </div>
+        </div>
+        
+        <!-- AI Tools -->
+        <div class="skill-category">
+          <h3><i class="fas fa-brain"></i>
+            <span class="lang-en">AI Copilots & Dev</span>
+            <span class="lang-es">Copilotos de IA</span>
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Antigravity (DeepMind)</span>
+            <span class="skill-tag">Claude</span>
+            <span class="skill-tag">Codex</span>
+            <span class="skill-tag">Prompt Engineering</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VFX Filmography Credits Section -->
+  <section id="vfx">
+    <div class="container">
+      <div class="vfx-intro">
+        <h2>
+          <span class="lang-en">AAA VFX Production Credits</span>
+          <span class="lang-es">Créditos de Producción AAA VFX</span>
+        </h2>
+        <p class="lang-en">
+          As a Technical Crowd Artist at the internationally acclaimed studio <strong>El Ranchito</strong>, I engineered critical automation scripts in Python, decreasing sim calculation loads and resolving intricate pipeline bottlenecks under strict movie production timelines.
+        </p>
+        <p class="lang-es">
+          Como Technical Crowd Artist en el internacionalmente aclamado estudio <strong>El Ranchito</strong>, desarrollé scripts de automatización críticos en Python, reduciendo los tiempos de cálculo de simulación y resolviendo complejos cuellos de botella del pipeline bajo estrictos plazos de producción de cine.
+        </p>
+      </div>
+      
+      <div class="filmography-grid">
+        <!-- Society of the Snow -->
+        <div class="film-card">
+          <div class="film-year">2023 - 2024</div>
+          <h3 class="film-title">Society of the Snow</h3>
+          <div class="film-role">
+            <span class="lang-en">Crowd Simulator & Scripting</span>
+            <span class="lang-es">Simulación de Multitudes & Scripting</span>
+          </div>
+          <p class="film-desc lang-en">
+            Designed custom Python pipeline scripting to handle massive scale crowd simulations under freezing environment conditions. Academy Award (Oscar) Nominated for Best Visual Effects.
+          </p>
+          <p class="film-desc lang-es">
+            Diseñé scripts personalizados en Python para gestionar simulaciones de multitudes a escala masiva en condiciones climáticas extremas. Nominada al Oscar a los mejores efectos visuales.
+          </p>
+          <span class="film-badge">Oscar Nominee</span>
+        </div>
+        
+        <!-- Game of Thrones Prequel -->
+        <div class="film-card">
+          <div class="film-year">2024 - 2025</div>
+          <h3 class="film-title">A Knight of the Seven Kingdoms</h3>
+          <div class="film-role">
+            <span class="lang-en">Pipeline Tool Developer</span>
+            <span class="lang-es">Desarrollador de Herramientas de Pipeline</span>
+          </div>
+          <p class="film-desc lang-en">
+            Architected automation tools within the Houdini and Crowd pipelines to expedite crowd behaviors and render assets dynamically.
+          </p>
+          <p class="film-desc lang-es">
+            Diseñé herramientas de automatización dentro de los flujos de trabajo de Houdini y multitudes para acelerar la dinámica de comportamiento de masas.
+          </p>
+          <span class="film-badge">HBO Max</span>
+        </div>
+        
+        <!-- Three Body Problem -->
+        <div class="film-card">
+          <div class="film-year">2023 - 2024</div>
+          <h3 class="film-title">3 Body Problem</h3>
+          <div class="film-role">
+            <span class="lang-en">Simulation Logic Specialist</span>
+            <span class="lang-es">Especialista en Lógica de Simulación</span>
+          </div>
+          <p class="film-desc lang-en">
+            Engineered procedural population layout scripts to automate rendering placement, saving hundreds of rendering hours across heavy virtual reality worlds.
+          </p>
+          <p class="film-desc lang-es">
+            Programé herramientas de diseño de población procedurales para automatizar la ubicación y guardado de recursos, ahorrando cientos de horas de renderizado.
+          </p>
+          <span class="film-badge">Netflix</span>
+        </div>
+        
+        <!-- Halo Season 2 -->
+        <div class="film-card">
+          <div class="film-year">2022 - 2023</div>
+          <h3 class="film-title">Halo Season 2</h3>
+          <div class="film-role">
+            <span class="lang-en">Crowd Pipeline Optimizer</span>
+            <span class="lang-es">Optimizador del Pipeline de Multitudes</span>
+          </div>
+          <p class="film-desc lang-en">
+            Optimized simulations for sci-fi combat sequences using Python automation to expedite production pipelines.
+          </p>
+          <p class="film-desc lang-es">
+            Optimicé simulaciones de combate de ciencia ficción usando automatizaciones en Python para agilizar el pipeline de producción de VFX.
+          </p>
+          <span class="film-badge">Paramount+</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" style="background: rgba(11, 15, 25, 0.45);">
+    <div class="container">
+      <h2 style="margin-bottom: 4rem;">
+        <span class="lang-en">Featured Projects</span>
+        <span class="lang-es">Proyectos Destacados</span>
+      </h2>
+      
+      <div class="projects-grid">
+        <!-- AI AutomaticSocial Studio -->
+        <div class="project-card">
+          <div class="project-visual">
+            <div class="project-visual-glow" style="background: radial-gradient(circle, rgba(138, 43, 226, 0.2) 0%, transparent 75%);"></div>
+            <div class="project-icon-art">🤖</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">AI AutomaticSocial Studio</h3>
+            <div class="project-meta">
+              <span class="lang-en">Next.js, React & n8n AI Content Engine</span>
+              <span class="lang-es">Lienzo Next.js, React & Motor de IA con n8n</span>
+            </div>
+            <p class="project-desc lang-en">
+              An automated workspace designed to create, optimize, and plan social media content. Merges a Next.js/React frontend with a flexible n8n pipeline backend and Google Gemini. Features a dark glassmorphic canvas, real-time post previews with download tools, an interactive chat copilot with image support, and secure server-side API routing.
+            </p>
+            <p class="project-desc lang-es">
+              Entorno inteligente de automatización diseñado para crear, optimizar y planificar contenido en redes sociales. Une una interfaz Next.js/React con flujos de automatización en n8n e Inteligencia Artificial (Google Gemini). Ofrece un lienzo glassmorphic, previsualizaciones en tiempo real, copiloto lateral interactivo y enrutamiento seguro de APIs.
+            </p>
+            
+            <div class="project-tech">
+              <span class="project-tech-tag">Next.js</span>
+              <span class="project-tech-tag">React</span>
+              <span class="project-tech-tag">TailwindCSS</span>
+              <span class="project-tech-tag">n8n</span>
+              <span class="project-tech-tag">Google Gemini</span>
+              <span class="project-tech-tag">TypeScript</span>
+            </div>
+            
+            <div class="project-links">
+              <a href="https://github.com/unaibabe/AI_AutomaticSocial_Studio" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 0.6rem 1.2rem;">
+                <i class="fab fa-github"></i> Codebase
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pocket Battle Online -->
+        <div class="project-card">
+          <div class="project-visual">
+            <div class="project-visual-glow" style="background: radial-gradient(circle, rgba(0, 242, 254, 0.2) 0%, transparent 75%);"></div>
+            <div class="project-icon-art">⚡</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Pocket Battle Online</h3>
+            <div class="project-meta">
+              <span class="lang-en">Real-Time WebRTC, OpenCV & Python Web App</span>
+              <span class="lang-es">WebRTC en Tiempo Real, OpenCV & Python FastAPI</span>
+            </div>
+            <p class="project-desc lang-en">
+              A high-tech digitalizer for physical Pokémon TCG gameplay. Combines a React frontend with a robust FastAPI backend. Utilizes WebRTC for low-latency P2P video/audio streams, OpenCV for contour detection/perspective corrections, and Gemini 1.5 Flash multimodal AI for automated card recognition, persisted via PostgreSQL JSONB snapshots.
+            </p>
+            <p class="project-desc lang-es">
+              Plataforma para digitalizar partidas físicas del juego Pokémon TCG. Conecta un cliente React con un backend asíncrono en FastAPI. Utiliza WebRTC para videollamadas P2P de baja latencia, OpenCV para corrección de perspectiva/detección de contornos por webcam, e IA Gemini 1.5 Flash para lectura de cartas física, con persistencia JSONB en PostgreSQL.
+            </p>
+            
+            <div class="project-tech">
+              <span class="project-tech-tag">FastAPI</span>
+              <span class="project-tech-tag">React</span>
+              <span class="project-tech-tag">WebRTC</span>
+              <span class="project-tech-tag">OpenCV</span>
+              <span class="project-tech-tag">Gemini 1.5</span>
+              <span class="project-tech-tag">Socket.IO</span>
+              <span class="project-tech-tag">PostgreSQL</span>
+            </div>
+            
+            <div class="project-links">
+              <a href="https://github.com/unaibabe/Pocket-Battle-Online" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 0.6rem 1.2rem;">
+                <i class="fab fa-github"></i> Codebase
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Desktop Management App -->
+        <div class="project-card">
+          <div class="project-visual">
+            <div class="project-visual-glow" style="background: radial-gradient(circle, rgba(255, 170, 0, 0.15) 0%, transparent 75%);"></div>
+            <div class="project-icon-art">⚙️</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Desktop Management App</h3>
+            <div class="project-meta">
+              <span class="lang-en">Enterprise Java OOP & Relational SQL DB</span>
+              <span class="lang-es">Aplicación de Escritorio Java y SQL Relacional</span>
+            </div>
+            <p class="project-desc lang-en">
+              Designed and built a complete desktop management system written in Java using strict Object-Oriented Design patterns. Created, engineered and optimized a full SQL relational database architecture, maximizing indexing speeds, relational integrity and query performance for big data storage.
+            </p>
+            <p class="project-desc lang-es">
+              Diseño y desarrollo de un sistema de gestión empresarial en Java implementando patrones estrictos de Programación Orientada a Objetos. Diseñé, modelé y optimicé una arquitectura completa de bases de datos relacionales SQL, maximizando la velocidad de índices y la integridad de consultas.
+            </p>
+            
+            <div class="project-tech">
+              <span class="project-tech-tag">Java (OOP)</span>
+              <span class="project-tech-tag">SQL</span>
+              <span class="project-tech-tag">Relational Database</span>
+              <span class="project-tech-tag">JDBC / Hibernate</span>
+              <span class="project-tech-tag">Optimization</span>
+            </div>
+            
+            <div class="project-links">
+              <a href="http://github.com/unaibabe" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 0.6rem 1.2rem;">
+                <i class="fab fa-github"></i> Codebase
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <h2>
+        <span class="lang-en">Education & Credentials</span>
+        <span class="lang-es">Educación & Credenciales</span>
+      </h2>
+      
+      <div class="skills-container" style="margin-top: 3rem;">
+        <!-- UNIR DAM -->
+        <div class="skill-category">
+          <div style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.85rem; margin-bottom: 0.5rem;">UNIR | September 2024 – May 2026</div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">
+            <span class="lang-en">Multi-platform Application Development (DAM)</span>
+            <span class="lang-es">Desarrollo de Aplicaciones Multiplataforma (DAM)</span>
+          </h3>
+          <p class="lang-en">Focus on Relational Databases (SQL), Object-Oriented Programming (Java), and complex backend logic. Focused on OOP systems, architecture, and multi-device deployment.</p>
+          <p class="lang-es">Especialización en Bases de Datos Relacionales (SQL), Programación Orientada a Objetos (Java) y lógica de backend compleja. Título oficial centrado en POO, arquitectura de sistemas y bases de datos relacionales.</p>
+        </div>
+
+        <!-- Pau Casals -->
+        <div class="skill-category">
+          <div style="color: var(--accent-blue); font-family: var(--font-mono); font-size: 0.85rem; margin-bottom: 0.5rem;">Pau Casals | February 2026 – Present</div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">
+            <span class="lang-en">Web Application Development (IFCD0210)</span>
+            <span class="lang-es">Desarrollo de Aplicaciones Web (IFCD0210)</span>
+          </h3>
+          <p class="lang-en">Full-stack development for web-based applications and distributed systems. Specialized training in modern front-end stacks, API integrations, and client-server architectures.</p>
+          <p class="lang-es">Desarrollo full-stack para aplicaciones web y sistemas distribuidos. Formación especializada en tecnologías web modernas, integraciones de APIs y arquitecturas cliente-servidor.</p>
+        </div>
+        
+        <!-- La Salle -->
+        <div class="skill-category">
+          <div style="color: var(--accent-violet); font-family: var(--font-mono); font-size: 0.85rem; margin-bottom: 0.5rem;">La Salle - Universidad Ramon Llull | September 2020 – June 2024</div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">
+            <span class="lang-en">Bachelor's Degree in 3D Animation & VFX</span>
+            <span class="lang-es">Grado en Animación 3D y VFX</span>
+          </h3>
+          <p class="lang-en">Top honors (10/10 Matrícula de Honor) in VFX, Virtual Production, and Pipeline Scripting. Merged visual logic scripting with computer graphics pipelines.</p>
+          <p class="lang-es">Matrícula de Honor 10/10 en VFX, Producción Virtual y Scripting de Pipelines con Python. Fusión de programación avanzada con gráficos por ordenador.</p>
+        </div>
+
+        <!-- Visualnoobs -->
+        <div class="skill-category">
+          <div style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.85rem; margin-bottom: 0.5rem;">Visualnoobs | 2023 – 2024</div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">
+            <span class="lang-en">Houdini Crowd / TD Specialist</span>
+            <span class="lang-es">Especialización Houdini Crowd / TD</span>
+          </h3>
+          <p class="lang-en">Specialized in advanced Python scripting and PySide/PyQt UI development for workflow automation and simulation control.</p>
+          <p class="lang-es">Especialización en scripting avanzado en Python y desarrollo de interfaces con PySide/PyQt para la automatización de flujos de trabajo y control de simulación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <h2 class="contact-title">
+          <span class="lang-en">Let's Build Something Robust</span>
+          <span class="lang-es">Construyamos Algo Robust</span>
+        </h2>
+        <p class="contact-desc">
+          <span class="lang-en">
+            I am open to Junior Python Developer, React Front-End, or Full-Stack Web Development positions. Let's talk about clean code, modular systems, and automated workflows.
+          </span>
+          <span class="lang-es">
+            Estoy abierto a puestos de Junior Python Developer, React Front-End o Desarrollo Web Full-Stack. Hablemos de código limpio, sistemas modulares y flujos de trabajo automatizados.
+          </span>
+        </p>
+        
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/unai-ibabe/" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="http://github.com/unaibabe" target="_blank" rel="noopener" class="btn btn-secondary">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://docs.google.com/document/d/1XQkQnwRcy6RVpe0t4Pqefx6yK4L5_OoKu8qyg6fxmX4/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary">
+            <i class="fas fa-file-pdf"></i>
+            <span class="lang-en">Download CV</span>
+            <span class="lang-es">Descargar CV</span>
+          </a>
+          <a href="mailto:ibabe92@gmail.com" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div>
+        <p style="font-size: 0.9rem; color: var(--text-dark);">
+          &copy; 2026 Unai Ibabe. 
+          <span class="lang-en">All rights reserved. Designed with custom core values.</span>
+          <span class="lang-es">Todos los derechos reservados. Diseñado con valores de ingeniería.</span>
+        </p>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="#about" class="footer-link"><span class="lang-en">About</span><span class="lang-es">Sobre Mí</span></a></li>
+          <li><a href="#projects" class="footer-link"><span class="lang-en">Projects</span><span class="lang-es">Proyectos</span></a></li>
+          <li><a href="http://github.com/unaibabe" target="_blank" rel="noopener" class="footer-link"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/unai-ibabe/" target="_blank" rel="noopener" class="footer-link"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Web Application Scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/terminal.js"></script>
+</body>
+</html>
